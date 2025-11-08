@@ -57,16 +57,19 @@
 }
 
 .cover__title {
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    line-height: 1.15;
     color: #fff;
     font-size: 100px;
     letter-spacing: 30px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 .aligned-text {
-    text-transform: uppercase;
-    display: flex;
-    flex-direction: column;
-    
+    display: inline-block;
 }
 
 .aligned-text_left {
@@ -74,11 +77,13 @@
 }
 
 .aligned-text_center {
+    margin-right: -30px;
     text-align: center;
 }
 
 .aligned-text_right {
     text-align: right;
+    margin-right: -30px;
     padding-bottom: 106px;
 }
 

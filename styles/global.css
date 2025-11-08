@@ -17,11 +17,12 @@ body {
 }
 
 .cover {
-  padding: 165px 50px 50px 50px;
-  margin: 0px 0px;
+  padding: 165px 50px 50px;
+  min-height: 757px;
   background-image: url(../images/cover.jpg);
   background-size: cover;
   position: relative;
+  background-position: center;
   z-index: 1;
 }
 
