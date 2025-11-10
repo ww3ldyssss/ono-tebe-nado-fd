@@ -1,10 +1,11 @@
 .header {
-    display: grid;
+  margin: 0px 0px;
+  padding: 94px 50px 94px 50px;
+  display: grid;
     grid-template-columns: 1fr min-content 1fr;
     align-items: center;
 }
  
-
 .header__links-list {
     display: flex;
     justify-content: flex-start;
@@ -44,6 +45,16 @@
 .address_tel {
     text-decoration: underline;
     text-underline-position: under;
+}
+
+.cover {
+  padding: 165px 50px 50px;
+  min-height: 757px;
+  background-image: url(../images/cover.jpg);
+  background-size: cover;
+  position: relative;
+  background-position: center;
+  z-index: 1;
 }
 
 .overlay {
@@ -114,6 +125,11 @@
     border-color: #fff;
 }
 
+.lots {
+  margin: 180px 0px 0px;
+  padding: 0px 24px 53px;
+}
+
 .lots__heading {
     font-family: Raleway, sans-serif;
     text-transform: uppercase;
@@ -124,11 +140,16 @@
     padding-bottom: 27px;
 }
 
-.lots__card-list-item {
-    position: relative;
+.lots__card-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    flex-wrap: wrap;
     list-style: none;
+}
+
+.lots__card-list-item {
     width: 334px;
-    height: 596px;
 }
 
 .card-link {
@@ -137,6 +158,7 @@
     flex-wrap: wrap;
     flex-direction: column;
     gap: 25px;
+    text-decoration: none;
 }
 
 .card {
@@ -148,6 +170,7 @@
     justify-content: space-between;
     position: relative;
     z-index: 1;
+    min-height: 596px;
 }
 
 .card_type_film {
@@ -182,13 +205,21 @@
 
 .more {
     color: #000;
-    font-family: Raleway;
+    font-family: Raleway, sans-serif;
     font-weight: 400;
     font-size: 20px;
     line-height: 100%;
     display: flex;
     padding-top: 30px;
     padding-left: 40px;
+}
+
+.about {
+  display: grid;
+  align-items: start;
+  grid-template-columns: 334px 1fr;
+  margin: 120px 24px 0px;
+  padding: 35px 0px 0px 47px;
 }
 
 .about__logo {
@@ -230,12 +261,17 @@
     gap: 24px;
 }
 
-.footer__menu {
+.footer {
+  margin: 180px 0px 0px;
+  padding: 0px 50px 80px;
+}
+
+.footer__menu-list {
     display: flex;
     justify-content: space-between;
 }
 
-.footer__address {
+.address {
     width: 264px;
     border: 1px;
     display: flex;
