@@ -271,7 +271,7 @@
     justify-content: space-between;
 }
 
-.address {
+.address__footer {
     width: 264px;
     border: 1px;
     display: flex;
